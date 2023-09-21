@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Mengatur gambar untuk responsif */
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh; /* Membatasi tinggi gambar agar tidak terlalu besar di perangkat dengan layar tinggi */
+    width: auto; /* Membuat gambar mengikuti lebar maksimum */
+}
+
+/* Media query untuk perangkat mobile */
+@media (max-width: 768px) {
+    .slide {
+        padding: 20px; /* Menambahkan ruang padding untuk perangkat dengan lebar kurang dari 768px */
+    }
+
+    h1 {
+        font-size: 18px; /* Mengurangi ukuran font untuk perangkat mobile */
+    }
+}
